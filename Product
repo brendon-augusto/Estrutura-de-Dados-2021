@@ -1,0 +1,23 @@
+package br.edu.univas.view;
+
+public class Product {
+	
+	//informações das peças do jogo
+	
+	private int product1;
+  private int product2;
+  
+public int getProduct1() {
+	return product1;
+}
+public void setProduct1(int product1) {
+	this.product1 = product1;
+}
+public int getProduct2() {
+	return product2;
+}
+public void setProduct2(int product2) {
+	this.product2 = product2;
+} 
+  
+}

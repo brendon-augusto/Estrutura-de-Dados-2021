@@ -1,0 +1,41 @@
+import br.edu.univas.si3.ed.exercices.data.StackChar;
+public class Runner {
+
+    public static StackChar copy (StackChar pilha) {
+
+        char v;
+        StackChar pNova = new StackChar();
+        StackChar pTemp = new StackChar();
+
+
+        while (!pilha.isEmpty()) {
+
+            v = pilha.pop();
+            pTemp.push(v);
+
+        }
+
+        System.out.println("Log 1: " + pTemp.getAsString());
+        while (!pTemp.isEmpty()) {
+
+            v = pTemp.pop();
+            pilha.push(v);
+            pNova.push(v);
+        }
+
+        System.out.println("Log 2: " + pNova.getAsString());
+        return pNova;
+    }
+
+    public static void main(String[] args) {
+
+        StackChar pilha = new StackChar ();
+        String matricula = "23567894";
+
+        for (int i = 0; i < matricula.length(); i++){
+            pilha.push(matricula.charAt(i));
+        }
+
+        Runner.copy(pilha);
+
+    }

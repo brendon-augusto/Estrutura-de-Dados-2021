@@ -1,0 +1,29 @@
+package br.edu.univas.main;
+
+public class Runner02 {
+	public static void main(String[] args) {
+		
+	}
+}
+public boolean equals(ProductList other) {
+
+        ProductNode currentLi1 = head;
+        ProductNode currentLi2 = other.head;
+        ProductNode nextL1 = head.next;
+        ProductNode nextL2 = other.head.next;
+
+        while (currentLi1 !=null) {
+
+            if (currentL1.info.name.equals(currentL2.info.name)){
+
+                currentLi1 = nextL1;
+                currentLi2 = nextL2;
+
+            }else {
+
+                System.out.println("As listas não são iguais XD");
+                return false;
+            }
+
+
+        }

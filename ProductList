@@ -1,0 +1,23 @@
+package br.edu.univas.view;
+
+public class ProductList {
+	
+	private Node head;
+	private Node last;
+	
+	public void inserir(Product Product) {
+		
+		Node novoNode = new Node();
+		
+		if(head == null) {
+			head = novoNode;
+		}
+		else {
+			last.next = novoNode;
+			novoNode.previous = last;
+		}
+		
+			last = novoNode;
+			novoNode.Product = Product;
+	}
+}

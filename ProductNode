@@ -1,0 +1,13 @@
+package br.edu.univas.view;
+
+public class ProductNode {
+	
+	
+	public ProducNode product;
+	public ProductNode previous;
+	public ProductNode info;
+	
+	// variavel de controle da lista
+	 public ProductNode next;
+	
+}
